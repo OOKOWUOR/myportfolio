@@ -435,18 +435,17 @@ periodic reports.</p>
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      // Mobile detection function
+      function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+      }
+    
+      // Check if the visitor is using a mobile device
+      if (isMobileDevice()) {
+         Redirect to the mobile version of your website
+       window.location.href = "index.html"; // Replace "mobile.html" with the actual URL of your mobile version
+      }
+    </script>
   </body>
 </html>
-
-<script>
-  // Mobile detection function
-  function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-  }
-
-  // Check if the visitor is using a mobile device
-  if (isMobileDevice()) {
-    // Redirect to the mobile version of your website
-    window.location.href = "index.html"; // Replace "mobile.html" with the actual URL of your mobile version
-  }
-</script>
