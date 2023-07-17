@@ -437,3 +437,16 @@ periodic reports.</p>
     ></script>
   </body>
 </html>
+
+<script>
+  // Mobile detection function
+  function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+
+  // Check if the visitor is using a mobile device
+  if (isMobileDevice()) {
+    // Redirect to the mobile version of your website
+    window.location.href = "mobile.html"; // Replace "mobile.html" with the actual URL of your mobile version
+  }
+</script>
