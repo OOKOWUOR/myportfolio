@@ -226,3 +226,6 @@ button:focus {
 #about{
   margin-left: 200px;
 }
+@media (max-width: 575.98px){
+  #about{margin-left: 0px;}
+}
